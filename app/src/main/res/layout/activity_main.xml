@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background4">
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:background="@drawable/background2" />-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/bot_message_label"-->
+            <!--android:textSize="18dp" />-->
+
+        <EditText
+            android:id="@+id/bot_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="170dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="95dp"
+            android:clickable="false"
+            android:editable="false"
+            android:text="@string/bot_message_text"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:linksClickable="true"
+            android:outlineProvider="none"
+
+            android:background="#00ffffff"
+            android:typeface="serif" />
+
+
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/bot_message_label"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_weight="1" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/bot_message"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:hint="@string/bot_message_text"-->
+        <!--android:clickable="false"-->
+        <!--android:editable ="false"-->
+        <!--/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/user_message"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/textbox2"
+            android:hint="@string/edit_message" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:textAlignment="center"
+            android:onClick="SendMessage"
+            android:background="@drawable/sendbutton"
+            android:text="@string/button_send" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

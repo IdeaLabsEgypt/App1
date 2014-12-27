@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Talk to wormy!</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send!</string>
+    <string name="button_sending">Sending...</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="action_search">search yasta</string>
+    <string name="bot_message_text">"Hi, I'm wormy! talk to me about anything..."</string>
+    <string name="bot_message_label">Bot says:</string>
+</resources>
