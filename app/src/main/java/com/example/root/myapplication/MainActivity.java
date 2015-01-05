@@ -2,6 +2,8 @@ package com.example.root.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -62,6 +64,13 @@ public class MainActivity extends ActionBarActivity {
         botText.setText("...");
 
 
+        if (!checkOnlineState())
+        {
+            botText.setText("Hey, you're not connected to the internet :@");
+            return;
+        }
+
+
         Button sendButton = (Button) findViewById(R.id.send_button);
         sendButton.setText(R.string.button_sending);
         sendButton.setEnabled(false);
@@ -74,6 +83,16 @@ public class MainActivity extends ActionBarActivity {
             InputMethodManager inputManager = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
             inputManager.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         }
+    }
+
+    private boolean checkOnlineState() {
+        ConnectivityManager CManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo NInfo = CManager.getActiveNetworkInfo();
+        if (NInfo != null && NInfo.isConnectedOrConnecting()) {
+            return true;
+        }
+        return false;
     }
 
     //here goes the Async call to the bot api
