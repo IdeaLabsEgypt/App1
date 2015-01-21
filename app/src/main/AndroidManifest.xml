@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.root.myapplication" >
+    package="com.wormy.root.talktowormy" >
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -12,7 +12,7 @@
         android:screenOrientation = "portrait">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.app.talktowormy.MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan"
             >
@@ -24,12 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
+            android:name="com.app.talktowormy.DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.app.talktowormy.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.root.myapplication.MainActivity" />
+                android:value="com.app.talktowormy.MainActivity" />
 
         </activity>
     </application>

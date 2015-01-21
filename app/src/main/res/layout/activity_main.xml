@@ -24,41 +24,62 @@
             <!--android:text="@string/bot_message_label"-->
             <!--android:textSize="18dp" />-->
 
-        <EditText
-            android:id="@+id/bot_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:width="170dp"
-            android:paddingLeft="40dp"
-            android:paddingTop="95dp"
-            android:clickable="false"
-            android:editable="false"
-            android:text="@string/bot_message_text"
-            android:elegantTextHeight="false"
-            android:focusable="false"
-            android:linksClickable="true"
-            android:outlineProvider="none"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            </LinearLayout>
 
-            android:background="#00ffffff"
-            android:typeface="serif" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
 
-        <!--<TextView-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/bot_message_label"-->
-        <!--android:id="@+id/textView"-->
-        <!--android:layout_weight="1" />-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+                </LinearLayout>
 
-        <!--<EditText-->
-        <!--android:id="@+id/bot_message"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_weight="1"-->
-        <!--android:hint="@string/bot_message_text"-->
-        <!--android:clickable="false"-->
-        <!--android:editable ="false"-->
-        <!--/>-->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bot_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:text="@string/bot_message_text"
+                    android:elegantTextHeight="false"
+                    android:focusable="false"
+                    android:linksClickable="true"
+                    android:outlineProvider="none"
+
+                    android:background="#00ffffff"
+                    android:typeface="serif" />
+                </LinearLayout>
+
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
     </LinearLayout>
@@ -76,7 +97,7 @@
             android:id="@+id/user_message"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:paddingLeft="10dp"
+            android:paddingLeft="15dp"
             android:paddingRight="10dp"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"

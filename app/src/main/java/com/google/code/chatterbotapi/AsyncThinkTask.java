@@ -26,10 +26,6 @@ package com.google.code.chatterbotapi;
 //    }
 
 import android.os.AsyncTask;
-import android.view.View;
-import android.widget.EditText;
-
-import com.example.root.myapplication.R;
 
 public class AsyncThinkTask extends AsyncTask<String,Void,String> {
     @Override
